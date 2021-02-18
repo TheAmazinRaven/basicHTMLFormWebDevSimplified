@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="username" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input id="phone" type="tel" name="phone" id="phone">
+            </div>
+            <div>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url">
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="1" required>
+            </div>
+            <div>
+                <label for="eyeColor"></label>
+                <select name="eyeColor" id="eyeColor">
+                    <option value="">Brown</option>
+                    <option value="">Hazel</option>
+                    <option value="">Blue</option>
+                </select>
+            </div>
+            <div>
+                <label for="date">Birthday</label>
+                <input type="date" name="date" id="date" max="2021-02-18" required>
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="password" required>
+            </div>
+            <div>
+                Favorite Food
+                <div>
+                    <label for="banana">Banana</label>
+                    <input type="checkbox" name="banana" id="banana">
+                </div>
+                <div>
+                    <label for="apple">Apple</label>
+                    <input type="checkbox" name="apple" id="apple">
+                </div>
+                <div>
+                    <label for="orange">Orange</label>
+                    <input type="checkbox" name="orange" id="orange">
+                </div>
+            </div>
+            <div>
+                Gender
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male" required>
+                </div>
+                <div>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female" required>
+                </div>
+                <div>
+                    <label for="nonbinary">Non-Binary</label>
+                    <input type="radio" name="gender" id="nonbinary" value="nonbinary" required>
+                </div>
+                <div>
+                    <label for="other">Other/Prefer Not to Specify</label>
+                    <input type="radio" name="gender" id="other" value="other" required>
+                </div>
+            </div>
+            <input hidden name="hidden" value="hi">
+            <div>
+                <label for="file">File</label>
+                <input type="file" id="file" name="file">
+            </div>
+            <div>
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio">My Name is Serena</textarea>
+            </div>
+            <div>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+
+
+        </form>
+
+
+    </body>
+</html>
